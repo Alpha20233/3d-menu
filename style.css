@@ -20,6 +20,7 @@ html,body{
     perspective: 500px;
     @media only screen and (max-width:425px){
       overflow: auto !important;
+      height: 112vh;
     }
 }
 
