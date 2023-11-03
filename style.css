@@ -18,6 +18,9 @@ html,body{
     position: relative;
     overflow: hidden;
     perspective: 500px;
+    @media only screen and (max-width:425px){
+      overflow: auto !important;
+    }
 }
 
 .background{
@@ -47,10 +50,20 @@ html,body{
 
 .list {
     display: flex;
+    flex-direction: row;
     /* background-color: lightseagreen; */
     margin-top: 80px;
     justify-content: space-between;
     padding: 0 120px;
+
+    @media only screen and (max-width:425px){
+        align-items: center ;
+        display: grid !important;
+        grid-template-columns: repeat(2,1fr) !important;
+        gap: 0.5rem;
+        padding: 0 10px;
+    }
+
 }
 
 .card{
@@ -124,6 +137,10 @@ html,body{
     transition: all ease .5s;
     left: -15%;
     white-space: nowrap;
+
+    @media only screen and (max-width:425px){
+        left: -46% ;
+    }
 }
 
 .hiddMenu .link{
